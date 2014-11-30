@@ -6,7 +6,7 @@ order: 2
 
 # About Natterjack
 
-Project Natterjack is the musings and messings about in language design of [Will Speak][plingdollar]. The language is designed to  have the simple power of a dynamically typed language, but in a statically typed one[^1].
+Project Natterjack is the musings and messings about in language design of [Will Speak][plingdollar]. The language is designed to  have the simple power of a dynamically typed language, but in a statically typed one[^1]. It is named after the Natterjack toad, a beast native to the UK that is well known for it’s love of obscure programming languages.
 
 ## About the Logo
 
