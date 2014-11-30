@@ -31,19 +31,15 @@ header {
 	position: relative;
 	background-color: #FFF;
 	margin: 20px 10px 30px 10px;
-}
-
-header img#logoimg {
-	margin-left: 40px;
-	width: 250px;
-	height: auto;
+	height: 250px;
+	background: url(/img/logo_250.png) no-repeat;
 }
 
 header div#logo {
-	position: absolute;
-	top: 60px;
-	left: 320px;
+	padding-top: 60px;
+	padding-left: 250px;
 	text-align: center;
+	width: 400px;
 }
 
 header div#logo h1 {
@@ -51,7 +47,7 @@ header div#logo h1 {
 	font-weight: 100;
 }
 
-header div#logo nav > a.main_nav > svg {
+header div#logo nav > a.main_nav {
 	display: none;
 }
 
@@ -76,13 +72,9 @@ header div#logo nav > ul {
 @media screen and (max-width: 700px) {
 
 	header {
-		margin: 20px 0 30px 0;
-	}
-
-	header img#logoimg {
-		margin: 0;
-		width: 50px;
-		height: auto;
+		height: 50px;
+		margin: 20px 0 0 0;
+		background: url(/img/logo_50.png) no-repeat;
 	}
 
 	header div#logo {
@@ -120,7 +112,7 @@ header div#logo nav > ul {
 		padding-top: 10px;
 	}
 
-	header div#logo nav > a.main_nav > svg,
+	header div#logo nav > a.main_nav,
 	header div#logo nav:hover > ul > li > a {
 		display: block;
 		padding: 2px 9px;
