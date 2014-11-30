@@ -1,0 +1,169 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: Cochin, Baskerville, Georgia, Serif;
+}
+
+h2, h3, h4, h5, h6 {
+	font-style: italic;
+}
+
+/* Variable-width body up to 800px */
+body {
+	font: 16px Georgia, Times, Serif;
+	line-height: 150%;
+	padding: 0 10px;
+}
+
+@media screen and (min-width: 800px) {
+	body {
+		font-size: 18px;
+		width: 780px;
+		margin: 0 auto;
+	}
+}
+
+/* Header */
+
+header {
+	position: relative;
+	background-color: #FFF;
+	margin: 20px 10px 30px 10px;
+}
+
+header img#logoimg {
+	margin-left: 40px;
+	width: 250px;
+	height: auto;
+}
+
+header div#logo {
+	position: absolute;
+	top: 60px;
+	left: 320px;
+	text-align: center;
+}
+
+header div#logo h1 {
+	font-size: 68px;
+	font-weight: 100;
+}
+
+header div#logo nav > a.main_nav > svg {
+	display: none;
+}
+
+header div#logo nav > ul {
+	margin: 0; padding: 0;
+}
+
+@media screen and (min-width: 700px) {
+
+	header div#logo nav > ul > li {
+		display: inline;
+		list-style-type: none;
+	}
+
+	Header div#logo nav > ul > li:not(:first-child):before {
+		content: "//";
+		color: #333;
+		padding: 0 3px;
+	}	
+}
+
+@media screen and (max-width: 700px) {
+
+	header {
+		margin: 20px 0 30px 0;
+	}
+
+	header img#logoimg {
+		margin: 0;
+		width: 50px;
+		height: auto;
+	}
+
+	header div#logo {
+		position: initial;
+		display: inline;
+	}
+
+	header div#logo h1 {
+		position: absolute;
+		left: 60px;
+		right: 60px;
+		top: 15px;
+		font-size: 36px;
+		margin: 0; padding: 0;
+	}
+	
+	header div#logo nav {
+		position: absolute;
+		top: 0;
+		right: 0;
+		border-radius: 4px;
+		border: 1px solid #CCC;
+		padding: 9px 0;
+		text-align: right;
+		background-color: #FFF;
+	}
+
+	header div#logo nav > ul {
+		display: none;
+	}
+
+	header div#logo nav:hover > ul {
+		display: block;
+		clear: both;
+		padding-top: 10px;
+	}
+
+	header div#logo nav > a.main_nav > svg,
+	header div#logo nav:hover > ul > li > a {
+		display: block;
+		padding: 2px 9px;
+	}
+
+	header div#logo nav:hover > ul > li > a:hover {
+		background-color: #EEE;
+	}
+	
+	header div#logo nav > a.main_nav > svg {
+		width: 30px;
+		height: auto;
+		float: right;
+	}
+}
+
+/* Footer  */
+
+footer {
+	text-align: center;
+	color: #CCC;
+	padding: 20px 0;
+}
+
+a, a:visited, a:hover {
+	color: rgb(97, 180, 83);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+pre, p code {
+	background: #EEE none;
+	border-radius: 3px;
+	border-bottom: 2px solid #999;
+	font-family: Melno, Monaco, Consolas, Monospace;
+	color: #333;
+}
+
+p > code {
+	display: inline;
+	padding: 1px 5px;
+}
+
+pre {
+	display: block;
+	padding: 15px;
+}
