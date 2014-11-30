@@ -21,6 +21,10 @@ body {
 	}
 }
 
+section#content > div.footnotes {
+	font-size: 0.9em;
+}
+
 /* Header */
 
 header {
