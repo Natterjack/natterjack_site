@@ -47,6 +47,10 @@ header div#logo h1 {
 	font-weight: 100;
 }
 
+header div#logo h1 a {
+	color: #000;
+}
+
 header div#logo nav > a.main_nav {
 	display: none;
 }
@@ -73,7 +77,7 @@ header div#logo nav > ul {
 
 	header {
 		height: 60px;
-		margin: 20px 0 0 0;
+		margin: 10px 0 0 0;
 		background: url(/img/logo_50.png) no-repeat;
 		border-bottom: 1px solid #CCC;
 	}

@@ -9,7 +9,7 @@
   <ul>
 	{% assign links = site.pages | sort:'order' %}
 	{% for link in links %}
-	<li><a href="{{link.url}}"
+	<li><a href="{{link.url}}" title="{{link.title}}"
 		   {% if link.url == page.url %}
 		   class="current"
 		   {% endif %}
