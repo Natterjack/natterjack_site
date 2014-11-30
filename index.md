@@ -1,5 +1,7 @@
 ---
 layout: index
+title: Welcome
+order: 1
 ---
 
 # Welcome
@@ -10,7 +12,7 @@ Natterjack is a statically typed programming language inspired by the power and 
         // writes a greeting to the standard output
         void greet(String thing)
             IO.put("Hello #{thing}")
-        end   
+        end
     end
 
     Hello.new.greet("World!")

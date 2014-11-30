@@ -1,15 +1,10 @@
 <html>
-  <head>
-	<link rel="stylesheet" href="{{site.url}}/css/normalize.css" type="text/css" />
-	<link rel="stylesheet" href="{{site.url}}/css/main.css" type="text/css" />
-	<title>Natterjack</title>
-	<meta name="viewport" content="width=device-widt, initial-scale=1" />
-  </head>
+  {% include html_head.html %}
   <body>
 	<header>
 	  <img id="logoimg" src="{{site.url}}/img/logo_250.png" />
 	  <div id="logo">
-		<h1>Natterjack</h1>
+		<h1>{{site.name}}</h1>
 		<nav>
 		  <a href="#" class="main_nav">
 			<svg viewBox="0 0 18 15">
@@ -19,10 +14,14 @@
 			</svg>
 		  </a>
 		  <ul>
-			<li><a href="#foo">Welcome</a></li>
-			<li><a href="#foo">About</a></li>
-			<li><a href="#foo">Docs</a></li>
-			<li><a href="#foo">Blog</a></li>
+			{% assign links = site.pages | sort:'order' %}
+			{% for link in links %}
+			<li><a href="{{link.url}}"
+				   {% if link.url == page.url %}
+				   class="current"
+				   {% endif %}
+				   >{{link.title}}</a></li>
+			{% endfor %}
 		  </ul>
 		</nav>
 	  </div>

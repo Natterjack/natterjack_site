@@ -65,7 +65,7 @@ header div#logo nav > ul {
 	Header div#logo nav > ul > li:not(:first-child):before {
 		content: "//";
 		color: #333;
-		padding: 0 3px;
+		padding-right: 4px;
 	}	
 }
 
@@ -146,7 +146,7 @@ a, a:visited, a:hover {
 	text-decoration: none;
 }
 
-a:hover {
+a:hover, a.current {
 	text-decoration: underline;
 }
 
