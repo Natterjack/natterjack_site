@@ -1,0 +1,40 @@
+.section {
+	padding: 30px 0;
+	margin-bottom: 30px;
+}
+
+#main-logo {
+	text-align: center;
+	padding-top: 100px;
+}
+
+#main-logo h1 a {
+	text-decoration: none;
+	color: #333;
+}
+
+#intro-boxes, footer {
+	background-color: #242424;
+	color: #EEE;
+}
+
+#intro-boxes h3 {
+	text-align: center;
+}
+
+#intro-boxes .big-icon svg {
+	fill: #FBA;
+}
+
+#intro-boxes .big-icon {
+	fill: #EEE;
+	width: auto;
+	height: 100px;
+	display: block;
+	margin: 0 auto 10px auto;
+}
+
+footer {
+	padding-top: 15px;
+	text-align: center;
+}

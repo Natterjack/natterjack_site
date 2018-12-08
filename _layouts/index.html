@@ -1,15 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
 <html>
   {% include html_head.html %}
   <body>
-	<header>
-	  <div id="logo">
+
+	<!-- Header -->
+	<section id="main-logo" class="section">
+	  <div class="container">
+
+		<img src="{{site.url}}/img/logo_250.png" class="u-max-full-width" />
+
 		<h1><a href="{{site.url}}" title="Homepage">{{site.name}}</a></h1>
-		{% include main_nav.html %}
+
+		<a href="http://github.com/iwillspeak/" class="button">View the Code</a>
+		<a href="http://github.com/iwillspeak/" class="button button-primary">Download</a>
+
 	  </div>
-	</header>
-	<section id="content">
-	{{content}}
 	</section>
-	{% include footer.html %}
+
+	<section id="intro-boxes" class="section">
+	  <div class="container">
+
+		<!-- Intro Boxes -->
+		<div class="row">
+
+		  <div class="four columns">
+
+			<img src="img/icons/noun_16378_cc.svg" class="u-max-full-width big-icon" />
+			<h3>Docs</h3>
+			<p>Want to learn more about Natterjack? You can read through the latest documentation over on <a href="http://rtfd.org/">Read the Docs</a>.</p>
+		  </div>
+
+		  <div class="four columns">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Ebene_1" x="0px" y="0px" width="100.0px" height="100px" viewBox="25.6 -51.2 512.0 691.2" enable-background="new 0 0 512 512" xml:space="preserve" class="u-max-full-width big-icon">
+			  <g>
+				<polygon points="133.657,325.657 122.343,314.343 180.687,256 122.343,197.657 133.657,186.343 203.313,256  "/>
+			  </g>
+			  <g>
+				<rect x="224" y="312" width="96" height="16"/>
+			  </g>
+			  <g>
+				<path d="M456,424H56V88h400V424z M72,408h368V104H72V408z"/>
+			  </g>
+			</svg>
+			<h3>Code</h3>
+			<p>All of the code for Natterjack is on Github. Head there now to check it out.. :-)</p>
+		  </div>
+
+		  <div class="four columns">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="100.0px" height="100px" viewBox="25.6 -51.2 512.0 691.2" enable-background="new 0 0 512 512" xml:space="preserve" class="u-max-full-width big-icon">
+			  <g id="Ebene_2">
+				<g>
+				  <path d="M389.329,352.063c-0.07-2.251-0.187-6.019-18.307-38.063c-7.138-12.622-14.329-24.757-16.657-28.668    c2.242-11.578,4.431-24.344,6.593-38.421c5.508-35.857,3.555-68.095-5.805-95.814c-7.554-22.373-19.897-41.825-36.689-57.816    c-28.542-27.183-59.767-34.808-61.082-35.119l-1.376-0.325l-1.378,0.323c-1.324,0.311-32.778,7.932-61.56,35.103    c-16.937,15.99-29.397,35.442-37.035,57.815c-9.466,27.726-11.473,59.969-5.964,95.834c2.204,14.351,4.443,27.337,6.746,39.096    c-2.677,4.504-9.492,16.032-16.256,27.993c-18.12,32.045-18.236,35.812-18.307,38.063c-0.106,3.426,2.028,26.24,4.859,47.883    c5.959,45.556,9.987,49.71,11.923,51.707c1.467,1.514,3.349,2.347,5.299,2.347c2.946,0,7.398,0,52.31-32.961    c18.072-13.264,35.577-26.672,40.795-30.684c2.021-0.035,4.077-0.088,6.206-0.144C247.618,390.107,251.729,390,256,390    c4.279,0,8.384,0.108,12.353,0.212c1.98,0.052,3.899,0.103,5.783,0.138c5.208,4.004,22.722,17.419,40.803,30.689    C359.85,454,364.302,454,367.248,454c1.95,0,3.832-0.833,5.299-2.347c1.936-1.997,5.964-6.151,11.923-51.707    C387.301,378.304,389.436,355.489,389.329,352.063z M146.681,440.718c-1.475-4.499-4.233-15.792-7.812-43.426    c-2.793-21.563-4.576-41.578-4.621-44.668c1.032-4.651,13.05-26.657,26.226-49.213c6.719,29.661,14.075,49.869,22.75,63.06    c10.547,16.038,22.91,21.4,35.461,23.136C188.241,412.763,157.395,434.978,146.681,440.718z M256,378    c-4.429,0-8.619,0.109-12.67,0.216c-3.671,0.097-7.138,0.188-10.46,0.188c-28.193,0-50.463,0-70.939-133.314    c-5.189-33.783-3.392-63.995,5.343-89.795c6.933-20.478,18.252-38.288,33.644-52.937c23.19-22.072,48.931-30.393,55.083-32.146    c6.092,1.737,31.232,9.896,54.188,31.759c15.367,14.636,26.671,32.456,33.595,52.965c8.739,25.883,10.526,56.215,5.313,90.154    c-9.325,60.713-18.878,96.125-30.976,114.822c-10.114,15.632-21.09,18.492-39.062,18.492c-3.296,0-6.742-0.091-10.391-0.187    C264.622,378.11,260.438,378,256,378z M372.714,397.292c-3.579,27.634-6.338,38.927-7.812,43.426    c-10.71-5.738-41.539-27.939-71.971-51.087c12.505-1.71,24.817-7.053,35.266-23.201c8.556-13.225,15.843-33.604,22.549-63.644    c13.316,22.769,25.545,45.136,26.589,49.836C377.286,355.759,375.504,375.753,372.714,397.292z"/>
+				  <path d="M294,192c0-20.953-17.047-38-38-38s-38,17.047-38,38s17.047,38,38,38S294,212.953,294,192z M256,218    c-14.337,0-26-11.663-26-26s11.663-26,26-26s26,11.663,26,26S270.337,218,256,218z"/>
+				</g>
+			  </g>
+			</svg>
+			<h3>Intro</h3>
+			<p>Want to get started with Natterjack? It couldn't be easiser. Just download the source and do some stuff.</p>
+		  </div>
+
+		</div>
+
+	  </div>
+	</section>
+
+	<div class="container">
+
+	  <!-- Page content -->
+	  {{content}}
+
+	</div>
+
+	<!-- Footer -->
+	<footer>
+	  <div class="container">
+		{% include footer.html %}
+	  </div>
+	</footer>
+
+	</div>
   </body>
 </html>

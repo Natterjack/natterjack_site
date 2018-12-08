@@ -4,18 +4,23 @@ title: Welcome
 order: 1
 ---
 
-# Welcome
+<div class="row">
 
-Natterjack is a statically typed programming language inspired by the power and flexibility of dynamically typed languages.
+	<div class="six columns">
+		 <h2>Welcome</h2>
+		 <p>Natterjack is a statically typed programming language inspired by the power and flexibility of dynamically typed languages.</p>
+	</div>
 
-    class Hello
-        // writes a greeting to the standard output
-        void greet(String thing)
-            IO.put("Hello #{thing}")
-        end
+	<div class="six columns">
+		<pre><code>class Hello
+    // writes a greeting to the standard output
+    void greet(String thing)
+        IO.put("Hello #{thing}")
     end
-
-    Hello.new.greet("World!")
+end
+Hello.new.greet("World!")</code></pre>
+	</div>
+</div>
 
 ## Pinches of Salt
 
